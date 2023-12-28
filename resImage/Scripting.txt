@@ -1,0 +1,47 @@
+new-project 1000 1000
+
+add-layer hi
+
+add-image-to-layer hi resImage/exampleIM.jpg 0 0
+
+add-layer ho
+
+add-image-to-layer ho resImage/exampleIM.jpg 500 500
+
+add-layer he
+
+add-image-to-layer he resImage/exampleIM.jpg 500 0
+
+add-layer ha
+
+add-image-to-layer ha resImage/exampleIM.jpg 0 500
+
+save-image resImage/exampleStarta.png
+
+set-filter hi red-component
+
+set-filter ho blue-component
+
+set-filter he green-component
+
+save-image resImage/colorComponenta.png
+
+set-filter ha difference
+
+set-filter hi multiply
+
+set-filter ho screen
+
+add-image-to-layer ha resImage/exampleIM.jpg 0 500
+
+set-filter ha screen
+
+save-image resImage/finalExampleI.png
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="resImage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resImage/finalClassDiagram.zip!/" />
+      <root url="jar://$PROJECT_DIR$/resImage/Assignment5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/resImage/finalSSGUI.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/resImage" />
+      <root url="file://$PROJECT_DIR$/out" />
+    </SOURCES>
+  </library>
+</component>

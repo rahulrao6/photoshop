@@ -1,0 +1,35 @@
+What files do you need to send along for only the views
+to compile?
+
+This list must include:
+the interfaces and implementations for the view itself.
+For each file, briefly explain why that file is necessary
+for the view to work
+In order for the view to function, at the beginning of the project.
+
+
+
+I had to provide the features interface for the controller, the IProject
+interface for the model
+
+Features Interface - This file is necessary for the view to work,
+as this is passed into the view. (this was discussed as the one allowance) to break
+the mvc pattern, and is necessary for the gui and its button to function.
+IProject interface - This file is necessary as it is the model interface for this project,
+and is necessary for the view in the text-based program. But, an issue
+was found due to this interface.
+ImageLayer class - This class is required due to the IProject interface
+needing to return an ImageLayer to get the current Layer, this
+was a method built for the GUI (so the current layer can be targeted), and
+this exposes the ImageLayer class. I was not able to fix this decoupling issue
+and would recommend creating a factory pattern for imageLayers
+and moving functionality, so that the project can constructor layers
+to be shown, selected, and returned without needing the entire class.
+
+In order to make the controller compile, we will need additional files which
+unfortunately increases coupling between the controller and the model. The majority
+of coupling occurs in the ImageProcessor (text-based controller), and this is because
+I have not been able to fix and change functionality on that end since it was from previous
+assignments. In the future, i would remove the necessity of project implementations from
+the imageprocessor text controller as that will remove the necessity of all
+the different implementations (using the Iproject interface instead).
