@@ -23,12 +23,7 @@ users can access the screen, multiply, red component, blue component, and
 green component filters. The value, luma, and intensity filters are
 only available in the text-based or script program modes.
 
-## Missing Features
 
-No significant features from earlier assignments are missing in this version. Currently,
-the working filters in the GUI include screen, multiply, red component,
-blue component, and green component, while the value, luma, and intensity
-filters only work with text-based or script program modes.
 
 ## Requirements and Dependencies
 
